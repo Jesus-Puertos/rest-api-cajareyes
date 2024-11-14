@@ -1,0 +1,13 @@
+import { CorsOptions } from "cors";
+
+export const corsConfig: CorsOptions = {
+    origin: function(origin, callback){
+        if(origin === process.env.FRONTEND_UR, process.env.API_URL){
+            callback(null, true);
+        }else{
+            callback(new Error('No permitido por CORS'));
+        }
+
+    }
+
+}; 
