@@ -3,7 +3,7 @@ import User from '../models/User.model';
 import { checkPassword, hashPassword } from '../utils/auth';
 import Token from '../models/Token.model';
 import { generateToken } from '../utils/token';
-import { AuthEmail } from '../emails/authEmail';
+import { AuthEmail } from '../emails/AuthEmail';
 
 
 
